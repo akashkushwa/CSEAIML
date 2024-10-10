@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1> Events in Javascript </h1>
+<button id="btn">Click me</button>
+<p id="clickmessege"></p>
+ <label for="nameInput">NAME</label>
+ <input type="text" id="nameInput" placeholder="enter your name">
+ <p id="para2"></p>
+
+ <script>
+  document.getElementById("btn").onclick = function(){
+    document.getElementById("clickmessege").innerText ="Button Click" 
+  }
+  document.getElementById("nameInput").onblur = function() {
+  document.getElementById("para2").innerText = "Input field is focued!"
+ }
+ </script>
+ </script>
+<body>
+    
+</body>
+</html>
