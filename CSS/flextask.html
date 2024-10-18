@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FlexBox </title>
+</head>
+<style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding:0;
+
+
+
+
+    }
+    .parent{
+      border:none;
+      width: ;
+      display: flex;
+      height: 90vh;
+      flex-direction:row;
+      background-color: aqua;
+      align-items: center;
+      flex-wrap:wrap-reverse;
+      align-content: center;
+
+
+    }
+    .Box{
+      border:2px solid blue;
+      width:100px;
+      height:100px;
+      background-color: aquamarine;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #Box-1{
+        align-tracks: left;
+      order:1;
+      flex-grow: 1;
+      align-self:normal;
+
+    }
+    #Box-2{
+        order:1;
+        align-self: normal;
+    }
+    #Box-3{
+     flex-grow: 1;
+     align-self: normal;
+
+    }
+
+</style>
+<body>
+    <div class="parent">
+        <div class="Box" id="Box-1">Basic</div>
+        <div class="Box" id="Box-2">Premium</div>
+        <div class="Box" id="Box-3">Pro</div>
+    
+       
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
